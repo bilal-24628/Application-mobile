@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContacTel</title>
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="homepage" data-role="page">
+        <div data-role="header">
+            <h1>ContacTel</h1>
+        </div>    
+        <div role="main" class="ui-content">
+            <a href="#addContactPage"data-role="button" data-icon="plus" data-iconpos="right">Ajouter</a>
+            <ul id="contactList" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Recherche contact...">
+                <li>
+                    <a href="#">
+                        <img src="img/homme.png" alt="">
+                        <h2>Bilal SECK</h2>
+                        <p>77 138 51 44</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/homme.png" alt="">
+                        <h2>Mamadou SECK</h2>
+                        <p>77 138 51 44</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/femme.png" alt="">
+                        <h2>Bineta SECK</h2>
+                        <p>77 138 51 44</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>M1IABD &copy; 2024</h1>
+
+        </div>    
+    </div>
+</body>
+<body>
+    <div id="addContactPage" data-role="page">
+        <div data-role="header">
+            <a href="#homepage" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ContacTel</h1>
+        </div>    
+        <div role="main" class="ui-content">
+            <div data-role="header">
+                <a href="#updateContactPage" data-icon="edit" data-iconpos="notext">Home</a>
+                <h1>Contact Details</h1>
+                <a href="#deleteContactPage" data-icon="delete" data-iconpos="notext">Home</a>
+            </div> 
+            <form>
+                <label for="prenom">prenom</label>
+                <input type="text" id="prenome">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom">
+                <label for="Telephone">Telephone</label>
+                <input type="tel" id="Telephone">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <input type="button" value="Ajouter">
+
+            </form>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>M1IABD &copy; 2024</h1>
+
+        </div>    
+    </div>
+</body>
+</html>
